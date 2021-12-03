@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*...............HEADER....................*/
+header {
+  background-color: grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.nav_items {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+}
+.btn_social {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+header,
+.btn_social {
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+}
+.btn_social a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*..............................SECTION 1.......................*/
+.section1 {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+.text_1 {
+  text-align: center;
+}
+.block_text_1 {
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+}
+.block_text_2 {
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+}
+/*...........................................SECTION 2 HARDSKILL + GRID + PROGRESS_BAR ............................*/
+
+.section2 {
+  height: 370px;
+  background-color: lightgrey;
+  animation: pulse 5s infinite;
+}
+/*.........titre..........*/
+.hardskill {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #fff;
+}
+/*.....grid.........*/
+.progress_bar {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 17em;
+  padding-top: 1em;
+}
+.progress_bar_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.568);
+  overflow: hidden;
+}
+.progress_bar_items::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.568);
+  animation: load 5s infinite;
+}
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 40%;
+  }
+
+  50% {
+    width: 60%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*...........................................SECTION 3 " PORTFOLIO GRID " ..........................*/
+
+.section3 {
+  background-color: lightgrey;
+  height: 800px;
+}
+/*.......titre.........*/
+.port {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #fff;
+}
+
+/*......grid photo........*/
+.grid {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20em);
+  grid-gap: 1.5em;
+  justify-content: center;
+  padding-top: 50px;
+}
+.grid_items {
+  background-color: blanchedalmond;
+  height: 20em;
+  justify-content: center;
+  border: 3px solid;
+}
+.img-grid {
+  width: 20em;
+  height: 20em;
+}
+/*...................................SECTION 4 FORMULAIRE DE CONTACT...............................................*/
+
+.section4 {
+  width: auto;
+  height: 500px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background-color: #ecf0f3;
+  width: 30%;
+  height: 450px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-form {
+  width: 250px;
+  height: 40px;
+  border-radius: 50px;
+  text-align:center;
+  margin: 10px;
+  font-size: 1em;
+}
+.form_lab {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+.btn-form {
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+  background-color: lightgreen;
+}
+button {
+  margin: 20px;
+  border-radius: 50px;
+}
+
+/*.........................................F O O T E R ...................................*/
+footer {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desktop specific */
+@media (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
