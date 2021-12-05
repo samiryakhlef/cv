@@ -12,28 +12,36 @@
 
 <body>
     <header>
-        <h1>NOM+PRENOM</h1>
-        <!--...................bar de navigation + créer des ancres........................ -->
-        <nav class="nav_bar">
-            <nav class="nav_items">
-                <a href="#section1">A propos</a>
-            </nav>
-            <nav class="nav_items">
-                <a href="#section2"> Skills</a>
-            </nav>
-            <nav class="nav_items">
-                <a href="#section3">Portfolio</a>
-            </nav>
-            <nav class="nav_items">
-                <a href="#section4">Contact </a>
-            </nav>
+        <h1>LOGO</h1>
+        <!--...................bar de navigation +  .....ancres........................  -->
+        <nav class="nav_bar" role="navigation">
+            <ul class="nav_items">
+                <li>
+                    <a href="#section1">A propos</a>
+                </li>
+                <li>
+                    <a href="#section2"> Skills</a>
+                </li>
+                <li>
+                    <a href="#section3">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#section4">Contact </a>
+                </li>
+            </ul>
         </nav>
 
-        <div class="btn_social">
-            <a href="#" class="btn_social_items"><i class="fab fa-github"></i></i></a>
-            <a href="#" class="btn_social_items"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="btn_social_items"><i class="fab fa-twitter"></i></a>
-        </div>
+
+
+        <nav class="social_bar" role="navigation">
+
+            <ul class="items_social">
+                <li><a href="https://github.com/samiryakhlef" target="blank"><i class="fab fa-github"></i></i></a></li>
+
+                <li></li> <a href="https://fr.linkedin.com/company/accueil" target="blank"><i class="fab fa-linkedin"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
     </header>
     <img src="image/fond_ecran.jpg" alt="pc_informatique" width="1900px" height="900px">
     <main>
@@ -144,12 +152,13 @@
                 <form method="get" class="formulaire">
                     <div class="form_lab">
                         <label for="name"></label>
-                        <input class="input-form" placeholder="Nom" type="text" name="name" autocomplete="name" id="name"
-                            required>
+                        <input class="input-form" placeholder="Nom" type="text" name="name" autocomplete="name"
+                            id="name" required>
                     </div>
                     <div class="form_lab">
                         <label for="E-mail"></label>
-                        <input class="input-form" placeholder="E-mail" type="text" name="E-mail" autocomplete="E-mail" id="E-mail" required>
+                        <input class="input-form" placeholder="E-mail" type="text" name="E-mail" autocomplete="E-mail"
+                            id="E-mail" required>
                     </div>
 
                     <div class="form-btn">
@@ -165,13 +174,13 @@
     </main>
     <footer>
         <h2 class="footer">Tous droits réservés @COPYRIGHT 2021<p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="CSS Valide !" />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
                 </a>
-            </p></h2>
-        
+            </p>
+        </h2>
+
     </footer>
 </body>
 
