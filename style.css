@@ -23,16 +23,16 @@ header {
 a {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
   list-style-type: none;
   text-decoration: none;
   text-transform: capitalize;
   color: rgb(7, 7, 7);
 }
-.nav_items a {
+.nav_items li {
+  display: flex;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 15px;
-  margin: auto 10px;
+  border-radius: 50px;
+  margin: 10px 10px;
   font-size: 25px;
 }
 .items_social {
@@ -145,19 +145,18 @@ li {
 /*...........................................SECTION 2 HARDSKILL + GRID + PROGRESS_BAR ............................*/
 
 .section2 {
-  height: 370px;
+  height: 450px;
   background-color: lightgrey;
   animation: pulse 5s infinite;
-  padding-top: 10px;
 }
-/*.........titre..........*/
+/*.........titre "hardskill"..........*/
 .hardskill {
   display: flex;
   justify-content: center;
   padding: 2%;
   background-color: #fff;
   border: 2px solid #000;
-  margin: auto 38%;
+  margin: 0 35%;
   border-radius: 50px;
 }
 .port {
@@ -165,25 +164,33 @@ li {
   border-radius: 50px;
   border: 2px solid #000;
 }
-/*.....grid.........*/
-.progress_bar {
-  width: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 500px);
-  grid-gap: 10px;
-  margin: 0 auto;
+/*.....SECTION 2 .........*/
+.section2 {
+  display: flex;
   justify-content: center;
-  height: 17em;
-  padding-top: 1em;
-  border-radius: 50px;
+  flex-direction: column;
 }
+/*.......SPAN......*/
+.techno {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: "ubuntu";
+}
+/*.......... BAR DE PROGRESSION........*/
+.progress_bar {
+  display: flex;
+  justify-content: space-around;
+  height: 10em;
+  padding-top: 1em;
+}
+/*........BAR DE PROGRESSION + ANIMATION  ..............*/
 .progress_bar_items {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.568);
+  background: rgb(118, 143, 179);
+  border-radius: 10%;
   overflow: hidden;
 }
 .progress_bar_items::after {
@@ -191,8 +198,9 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.568);
+  background: rgb(118, 143, 179);
+  border-radius: 10%;
+
   animation: load 5s infinite;
 }
 @keyframes load {
@@ -222,12 +230,15 @@ li {
   background-color: lightgrey;
   height: 800px;
 }
-/*.......titre.........*/
+/*.......titre portfolio.........*/
 .port {
   display: flex;
   justify-content: center;
   padding: 2%;
   background-color: #fff;
+  border: 2px solid #000;
+  margin: auto 470px;
+  border-radius: 50px;
 }
 
 /*......grid photo........*/
