@@ -172,29 +172,33 @@
 
         <!-- FORMULAIRE DE CONTACT + BACKGROUND-IMAGE................-->
         <section id="section4" class="section4">
-            <h1 class="title-form">Contact</h1>
-            <div class="form">
 
-                <form method="get" class="formulaire">
-                    <div class="form_lab">
-                        <label for="name"></label>
-                        <input class="input-form" placeholder="Nom" type="text" name="name" autocomplete="name"
-                            id="name" required>
-                    </div>
-                    <div class="form_lab">
-                        <label for="E-mail"></label>
-                        <input class="input-form" placeholder="E-mail" type="text" name="E-mail" autocomplete="E-mail"
-                            id="E-mail" required>
+            <div class="formulaire">
+                <form class="form" action="" method="post">
+                    <h1>Contact</h1>
+                    <label class="label" for="name">
+                        <input class="input_items" type="text" id="name" name="user_name" placeholder="Nom">
+                    </label>
+
+                    <label class="label" for="mail">
+                        <input class="input_items" type="text" id="name" name="user_name" placeholder="Email">
+                    </label>
+
+                    <label class="label" for="message">
+                        <textarea name="user_message" id="msg" placeholder="votre message"></textarea>
+                    </label>
+
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
                     </div>
 
-                    <div class="form-btn">
-                        <button>
-                            <input class="btn-form" type="submit" value="Envoyer">
-                        </button>
-                    </div>
+
 
                 </form>
             </div>
+
+            </div>
+
         </section>
 
     </main>
